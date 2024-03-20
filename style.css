@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -6,28 +7,30 @@ body {
     margin: 0;
     padding: 0;
 }
-
-img {
-    width: 100px;
-    height: auto;
-}
 .container {
-    margin: 3em;
+    margin: auto 4em ;
+    margin-top: 2em;
 }
+
+/* STORES SECTION */
+
 .stores {
     display: grid;
-    
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
 }
 
 .store-item {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     border: 1px solid grey;
-    margin:5px;
-    padding:3px;
     height: 250px;
+}
+.store-item img {
+    width: 150px;
+    height: 150px;
     
 }
