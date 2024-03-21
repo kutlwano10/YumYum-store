@@ -1,4 +1,4 @@
-
+/* 
 * {
     box-sizing: border-box;
 }
@@ -12,9 +12,13 @@ body {
     margin-top: 2em;
 }
 
+.logo img {
+    width: 150px;
+}
+
 /* STORES SECTION */
 
-.stores {
+/* .stores {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
@@ -33,4 +37,4 @@ body {
     width: 150px;
     height: 150px;
     
-}
+} */ 
