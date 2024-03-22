@@ -10,6 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet"
   />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -27,41 +29,61 @@
 </head>
 <body class="bg-gray-100">
     
-    <div class="container ">
-        <div class="nav">
-            <div class="logo">
-                <img src="./assets/yumyum-high-resolution-logo-transparent.png" alt="YumYum">
+    <div class="w-full">
+        <!-- LOGO SECTION -->
+
+            <div class="logo p-1 w-32">
+                <img src="./assets/yumyum-high-resolution-logo-transparent.png" alt="YumYum" class=" mb-6 mt-4 ">
+            </div>
+    
+        <!-- STORES SECTION -->
+        <div class="container mx-auto">
+
+            <h1 class="text-3xl font-bold mb-8">STORES</h1>
+            
+
+            <div class="stores-section  ">
+               <div class="store-list grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 text-center ">
+                    <!-- CARD 1 -->
+                    <div class="store-item bg-gray-100  rounded-lg flex justify-center text-center flex-col items-center shadow-main"  >
+                        <h2>Mandoza</h2> 
+                        <img src="./assets/—Pngtree—fast food big ham burger_8648590.png" alt="" class="w-64 h-64">
+                        <button class="bg-yellow-600 p-3 text-white rounded-2xl">Select Store</button>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="store-item bg-gray-100  rounded-lg flex justify-center text-center flex-col items-center shadow-main"  >
+                        <h2>FishMan</h2>
+                        <img src="./assets/chips and meat.png" alt="" class=" w-64 h-64">
+                        <button>Select Store</button>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="store-item bg-gray-100  rounded-lg flex justify-center text-center flex-col items-center shadow-main"  >
+                        <h2>Thepo's</h2>
+                        <img src="./assets/pngwing.com (2).png" alt="" class=" w-64 h-64">
+                        <button>Select Store</button>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="store-i bg-gray-100  rounded-lg flex justify-center flex-col items-center shadow-main text-center"  >
+                        <h2>Kwa Mashenke</h2>
+                        <img src="./assets/pngwing.com (3).png" alt="" class=" w-64 h-64">
+                        <button>Select Store</button>
+                    </div>
+                    <!-- CARD 5 -->
+                    <div class="store-item bg-gray-100  rounded-lg flex justify-center text-center flex-col items-center shadow-main"  >
+                        <h2>MshebeShe</h2>
+                        <img src="./assets/sphahlo2 trans.png" alt="" class=" w-64 h-64">
+                        <button class="" >Select Store</button>
+                    </div>
+                    <!-- CARD 6 -->
+                    <div class="store-item bg-gray-100  rounded-lg flex justify-center text-center flex-col items-center shadow-main"  >
+                        <h2>Learnado</h2>
+                        <img src="./assets/pngaaa.com-1666727.png" alt="" class=" w-64 h-64">
+                        <button>Select Store</button>
+                    </div>
+               </div>
             </div>
         </div>
-        <div class="store-container">
-            <h1>STORES</h1>
-            <div class="stores">
-                <div class="store-item">
-                    <h2>Mandoza</h2>
-                    <img src="./assets/—Pngtree—fast food big ham burger_8648590.png" alt="">
-                </div>
-                <div class="store-item">
-                    <h2>FishMan</h2>
-                    <img src="./assets/pngwing.com (4).png" alt="">
-                </div>
-                <div class="store-item">
-                    <h2>Thepo's</h2>
-                    <img src="./assets/pngwing.com (2).png" alt="">
-                </div>
-                <div class="store-item">
-                    <h2>Kwa Mashenke</h2>
-                    <img src="./assets/pngwing.com (3).png" alt="">
-                </div>
-                <div class="store-item">
-                    <h2>MshebeShe</h2>
-                    <img src="./assets/unnamed.jpg" alt="">
-                </div>
-                <div class="store-item">
-                    <h2>Learnado</h2>
-                    <img src="./assets/pngaaa.com-1666727.png" alt="">
-                </div>
-            </div>
-        </div>
+        <!-- END OF STORES SECTION -->
     </div>
     <script src="script.js" ></script>
 </body>
